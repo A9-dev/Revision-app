@@ -1,0 +1,73 @@
+#dropping-section {
+    background-color: rgb(64, 69, 82);
+    color: white;
+    height: 69vh;
+}
+
+#card-and-buttons {
+    border: solid 5px rgb(56, 60, 74);
+
+    background-color: rgb(75, 81, 98);
+    color: white;
+    height: 31vh;
+    text-align: center;
+}
+
+#easy-drop {
+    border: 5px solid rgba(0, 255, 0, 0.6);
+}
+
+#medium-drop {
+    border: 5px solid rgba(255, 255, 0, 0.6);
+}
+
+#hard-drop {
+    border: 5px solid rgba(255, 0, 0, 0.6);
+}
+
+.btn-primary,
+.btn-secondary {
+    background-color: rgb(56, 60, 74);
+    border-color: rgb(75, 81, 98);
+    margin: 10px;
+    font-size: medium;
+
+}
+
+.btn-primary {
+    font-size: x-large;
+}
+
+.btn-primary:hover {
+    background-color: rgb(82, 148, 226);
+    border-color: rgb(56, 60, 74);
+}
+
+#card {
+    text-align: center;
+    background-color: rgb(124, 129, 140);
+    border-radius: 15px;
+    height: 55%;
+}
+
+#extra-info {
+    background-color: rgb(124, 129, 140);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+/* Colours:
+64,69,82 -2nd darkest grey
+56,60,74 - darkest grey
+75,81,98 - 3rd darkest grey
+82,148,226 - the blue
+124,129,140 - 4th darkest grey
+
+*/

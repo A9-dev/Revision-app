@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Revise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="revision.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="dropping-section">
+      <!-- Easy, Medium and Hard dropping sections -->
+      <div class="col-sm-4" id="easy-drop">
+        Easy
+      </div>
+      <div class="col-sm-4" id="medium-drop">
+        Medium
+      </div>
+      <div class="col-sm-4" id="hard-drop">
+        Hard
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" id="card-and-buttons">
+      <!-- Create deck, edit deck and statistics buttons -->
+      <div class="col" id="menu-navigation">
+        Menu-navigation
+        <br />
+        <a href="createDeck.html" class="btn btn-primary">Create Deck</a>
+        <a href="editDeck.html" class="btn btn-primary">Edit Deck</a>
+        <a href="statistics.html" class="btn btn-primary">Statistics</a>
+        <!--
+        <button type="button" class="btn btn-primary" onclick="createDeckButton()">Create Deck</button>
+        <button type="button" class="btn btn-primary" onclick="editDeckButton()">Edit Deck</button>
+        <button type="button" class="btn btn-primary" onclick="statisticsButton()">Statistics</button> -->
+      </div>
+      <div class="col-4" id="card-area">
+        Card Area
+        <!-- Card -->
+        <div class="container-fluid" id="card">
+          Select a deck from the menu on the right
+        </div>
+        <button class="btn btn-primary" onclick="updateCard('back')">Show back</button>
+      </div>
+      <div class="col" id="extra">
+        <!-- Extra section which has relevant information, settings and deck select -->
+        <br>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Deck select
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="addTablesHere">
+            <a class="dropdown-item" href="#">Deck 1</a>
+            <a class="dropdown-item" href="#">Deck 2</a>
+            <a class="dropdown-item" href="#">Deck 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.$ = window.jQuery = require("jquery");
+  </script>
+
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+    integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="revision.js"></script>
+</body>
+
+</html>

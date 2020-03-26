@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(64, 69, 82);
+}
+
+#textInputSection {
+    /* Sets proportions of the rows (text input row and menu nav row) */
+    height: 60vh;
+    padding: 5vh 0;
+}
+
+#buttonSection {
+    padding: 15px;
+    /* Text colour and background colour */
+    color: white;
+    background-color: rgb(75, 81, 98);
+    /* Sets proportions of the rows */
+    height: 40vh;
+    /* Curved border */
+    border-radius: 40px 40px 0 0;
+}
+
+textarea {
+    /* Makes the text area un-resizable */
+    resize: none;
+}
+
+.btn-primary,
+.btn-secondary {
+    /* Sets colour and border colour of buttons */
+    background-color: rgb(56, 60, 74);
+    border-color: rgb(75, 81, 98);
+    /* Margin and font size */
+    margin: 10px;
+    font-size: medium;
+}
+
+.btn-primary {
+    /* Button font size */
+    font-size: x-large;
+}
+
+#filterListButton {
+    font-size: small;
+}
+
+.list-group {
+    color: black;
+    max-height: 20vh;
+    overflow-y: scroll;
+}

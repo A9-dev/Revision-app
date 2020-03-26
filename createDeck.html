@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="createDeck.css" />
+  <title>Create Deck</title>
+</head>
+
+<body>
+  <div class="container-fluid" style="text-align: center;">
+    <div class="row" id="textInputSection">
+      <!-- Front text input -->
+      <div class="col" id="frontTextArea">
+        <textarea name="frontText" id="frontTextInput" cols="60" rows="15"
+          placeholder="Text to go on the front of the card."></textarea>
+      </div>
+      <!-- Buttons -->
+      <div class="col-2">
+        <!-- Add card button -->
+        <button class="btn btn-primary" onclick="addCard()">Add card</button>
+        <!-- Deck select drop down -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Deck select
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="addTablesHere">
+            <a class="dropdown-item" href="#">Deck 1</a>
+            <a class="dropdown-item" href="#">Deck 2</a>
+            <a class="dropdown-item" href="#">Deck 3</a>
+          </div>
+        </div>
+      </div>
+      <!-- Back text input -->
+      <div class="col" id="backTextArea">
+        <textarea name="backText" id="backTextInput" cols="60" rows="15"
+          placeholder="Text to go on the back of the card."></textarea>
+      </div>
+    </div>
+    <!-- Other UI -->
+    <div class="row" id="buttonSection">
+      <!-- Menu navigation -->
+      <div class="col" id="menu-navigation">
+        <h3>Menu-navigation</h3>
+
+        <br />
+        <!-- Buttons to go to the different pages -->
+        <a href="index.html" class="btn btn-primary">Revise</a>
+        <a href="editDeck.html" class="btn btn-primary">Edit Deck</a>
+        <a href="statistics.html" class="btn btn-primary">Statistics</a>
+      </div>
+      <div class="col" id="createDeck">
+        <!-- Create deck section -->
+        <h3>Create Deck</h3>
+        <br />
+        Deck name: &nbsp;
+        <input type="text" name="deckName" id="deckNameInput" />
+        <br />
+        <br />
+        <button class="btn btn-primary" id="createDeckButton" onclick="createDeck()">
+          Create Deck
+        </button>
+      </div>
+      <div class="col" id="extra">
+        <!-- Space for extra elements -->
+        <h3>Extra</h3>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.$ = window.jQuery = require("jquery");
+  </script>
+
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+    integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="./createDeck.js"></script>
+</body>
+
+</html>

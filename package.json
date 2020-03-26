@@ -1,0 +1,24 @@
+{
+  "name": "revision-app",
+  "version": "1.0.0",
+  "description": "A project for my computer science course",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "electron": "^7.1.2",
+    "electron-db": "^0.15.2",
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.8",
+    "electron-reload": "^1.5.0"
+  }
+}
